@@ -1,2 +1,2 @@
-def test_ai(model: str, age: int) -> float:
-    return 0.1
+def test_ai(model: str, age: int, context: str) -> str:
+    return "penisi"
