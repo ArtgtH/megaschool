@@ -6,16 +6,16 @@ from ml.gigachad import test_ai
 def main():
     st.title("Proof of concept для сервиса авто")
 
-    model = st.text_input("Введите полностью модель вашей машины")
+    model = st.text_input("Модель автомобиля")
 
     age = st.number_input(
-        label="Введите сколько лет вашей машине",
+        label="Сколько лет автомобилю",
         min_value=0,
         step=1,
     )
 
     context = st.text_input(
-        "Введите дополнительную информацию (например, ваш стиль вождения)"
+        "Дополнительная информация (например, ваш стиль вождения)"
     )
 
     if st.button("Отправить запрос"):
